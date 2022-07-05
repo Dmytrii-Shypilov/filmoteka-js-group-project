@@ -6,7 +6,7 @@
   "homepage": "https://dmytrii-shypilov.github.io/filmoteka-js-group-project/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /group-project-js/"
+    "build": "parcel build src/*.html --public-url /filmoteka-js-group-project/"
   },
   "repository": {
     "type": "git",
