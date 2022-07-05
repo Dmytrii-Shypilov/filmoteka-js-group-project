@@ -90,7 +90,7 @@ var t,e=arguments[3];!function(e,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"spyz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=i(require("axios")),t=require("./refs"),s=require("notiflix");function i(e){return e&&e.__esModule?e:{default:e}}function a(e,t,s){return t in e?Object.defineProperty(e,t,{value:s,enumerable:!0,configurable:!0,writable:!0}):e[t]=s,e}class r{static async fetchTrendingMovies(s){t.refs.spinner.classList.add("is-visible");try{return await e.default.get(this.BASE_URL_TRENDING,{params:{api_key:this.API_KEY,page:s}})}catch(i){console.log(i)}finally{setTimeout(function(){t.refs.spinner.classList.remove("is-visible")},700)}}static async fetchGenres(){try{return await e.default.get(this.BASE_URL_GENRES,{params:{api_key:this.API_KEY}})}catch(t){console.log(t)}}static async fetchByQuery(i,a){try{return t.refs.spinner.classList.add("is-visible"),await e.default.get(this.BASE_URL_SEARCH,{params:{api_key:this.API_KEY,page:i,query:a}})}catch(r){console.log(r),s.Notify.info("Please enter something"),t.refs.pagination.style.display="none"}finally{t.refs.spinner.classList.remove("is-visible")}}static async fetchYoutube(t){try{return await e.default.get(`https://api.themoviedb.org/3//movie/${t}/videos`,{params:{api_key:this.API_KEY,language:"en - US"}})}catch(s){console.log("error")}}}exports.default=r,a(r,"API_KEY",t.refs.API_KEY),a(r,"BASE_URL_TRENDING",t.refs.BASE_URL_TRENDING),a(r,"BASE_URL_GENRES",t.refs.BASE_URL_GANRES),a(r,"BASE_URL_SEARCH",t.refs.BASE_URL_SEARCH);
 },{"axios":"dZBD","./refs":"VyiV","notiflix":"cwzQ"}],"QEon":[function(require,module,exports) {
-module.exports="/group-project-js/no-poster.18424991.jpg";
+module.exports="/filmoteka-js-group-project/no-poster.18424991.jpg";
 },{}],"BNjD":[function(require,module,exports) {
 var define;
 var global = arguments[3];
@@ -150,4 +150,4 @@ const e=document.querySelector(".footer-modalButton"),o=document.querySelector("
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/preloader"),require("./js/onSearchSubmit"),require("./js/onLoadPage"),require("./js/markup"),require("./js/movieModal"),require("./js/upBtn"),require("./js/registration"),require("./js/library-lists"),require("./js/library-lists-updates"),require("./js/nightMode"),require("./js/alternate-pages"),require("./js/modal-footer");
 },{"./sass/main.scss":"clu1","./js/preloader":"BeZ8","./js/onSearchSubmit":"JOxG","./js/onLoadPage":"tGpB","./js/markup":"tW6H","./js/movieModal":"z2q0","./js/upBtn":"NYxa","./js/registration":"vz0I","./js/library-lists":"defM","./js/library-lists-updates":"BNaX","./js/nightMode":"ESHz","./js/alternate-pages":"eTnV","./js/modal-footer":"hhFr"}]},{},["Focm"], null)
-//# sourceMappingURL=/group-project-js/src.50612fda.js.map
+//# sourceMappingURL=/filmoteka-js-group-project/src.4ce334d8.js.map
