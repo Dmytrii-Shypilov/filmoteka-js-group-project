@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.4",
-    "firebase": "^9.8.1",
+    "firebase": "^9.8.4",
     "notiflix": "^3.2.5"
   }
 }
