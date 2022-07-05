@@ -1,0 +1,78 @@
+.gallery {
+  padding-top: 60px;
+  @include less-tab {
+      padding-top: 20px;
+    
+    }
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(tablet) {
+    margin-left: -16px;
+    margin-top: -16px;
+  }
+}
+
+.card {
+  // @media screen and (max-width: 767px)
+  @include less-tab {
+    margin: 0 auto;
+    width: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tab {
+    margin-left: 16px;
+    margin-top: 16px;
+    flex-basis: calc(100% / 2 - 16px);
+  }
+
+  @include desk {
+    flex-basis: calc(100% / 3 - 16px);
+  }
+
+  cursor: pointer;
+
+  &-img {
+      height: 500px;
+        object-fit: cover;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &-title {
+    margin-bottom: 2px;
+    font-size: 12px;
+    line-height: 1.16;
+    color: $blackColor;
+  }
+
+  &-description {
+    font-weight: 500;
+    line-height: 1.33;
+    color: $accentColor;
+  }
+
+  &-rating {
+    padding: 1px 6px;
+
+    margin-left: 9px;
+    line-height: 1.16;
+    background-color: $accentColor;
+    color: $whiteColor;
+    border-radius: 5px;
+  }
+}
+
+.gallery-bottom-padding {
+  padding-bottom: 60px;
+    @include less-tab {
+      padding-bottom: 20px;
+    }
+}
