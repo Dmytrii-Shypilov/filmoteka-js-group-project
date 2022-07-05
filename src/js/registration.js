@@ -11,14 +11,15 @@ import {
 import { openHomePage } from './alternate-pages';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA0zZW7Ax3w5WW7X7rBic1se1nlIWmfipQ',
-  authDomain: 'something-8a49e.firebaseapp.com',
-  projectId: 'something-8a49e',
-  storageBucket: 'something-8a49e.appspot.com',
-  messagingSenderId: '166040751734',
-  appId: '1:166040751734:web:b2de702e8d42ad54d41957',
-  measurementId: 'G-PC4ZL0EZRC',
+  apiKey: "AIzaSyDEWAUH01_wNXC60RSWeOMaaESRXse_n_U",
+  authDomain: "js-learning-project-5c273.firebaseapp.com",
+  databaseURL: "https://js-learning-project-5c273-default-rtdb.firebaseio.com",
+  projectId: "js-learning-project-5c273",
+  storageBucket: "js-learning-project-5c273.appspot.com",
+  messagingSenderId: "173328197754",
+  appId: "1:173328197754:web:3ee64bf1e1f59f5d1bf3c3"
 };
+
 
 const app = initializeApp(firebaseConfig);
 
